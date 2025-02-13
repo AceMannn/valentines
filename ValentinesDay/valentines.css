@@ -1,0 +1,119 @@
+.cat-image {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.question {
+    text-align: center;
+    color: black;
+    font-family: "Lobster", serif;
+    font-weight: 400;
+    font-size: 50px;
+}
+
+.buttons {
+    text-align: center;
+}
+
+.btn1 {
+    background-color: #32cd32;
+    border: none;
+    border-radius: 5px;
+    height: 70px;
+    width: 150px;
+    margin-right: 10px;
+    font-weight: bolder;
+    font-size: 35px;
+}
+
+.btn1:active {
+    background-color: #00ff00;
+}
+
+
+.btn2 {
+    background-color: #ff2400;
+    border: none;
+    border-radius: 5px;
+    height: 70px;
+    width: 150px;
+    font-weight: bolder;
+    font-size: 35px;
+}
+
+.btn2:active {
+    background-color: #ae0c00;
+}
+
+.valentine-message {
+    display: none; 
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 600px;
+    opacity: 0; 
+    transition: opacity 0.5s ease-in-out;
+}
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.video-background video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+}
+
+.cat-image img {
+    width: 300px; 
+    height: auto; 
+    max-width: 100%; 
+    border-radius: 10px; 
+    transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 480px) {
+    .video-background {
+        font-size: 1.5em;
+        padding: 10px;
+    }
+
+    .question {
+        font-weight: 400;
+        font-size: 25px;
+    }
+    
+    .buttons {
+        text-align: center;
+    }
+    
+    .btn1 {
+        height: 40px;
+        width: 80px;
+        font-weight: bolder;
+        font-size: 20px;
+    }
+
+    .btn2 {
+        height: 40px;
+        width: 80px;
+        font-weight: bolder;
+        font-size: 20px;
+    }
+}
